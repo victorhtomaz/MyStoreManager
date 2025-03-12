@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="MSTest" Version="3.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\MyStoreManager.Communication\MyStoreManager.Communication.csproj" />
+    <ProjectReference Include="..\MyStoreManager.API\MyStoreManager.API.csproj" />
+    <ProjectReference Include="..\MyStoreManager.Application\MyStoreManager.Application.csproj" />
+    <ProjectReference Include="..\MyStoreManager.Domain\MyStoreManager.Domain.csproj" />
+    <ProjectReference Include="..\MyStoreManager.Infrastructure\MyStoreManager.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+</Project>
